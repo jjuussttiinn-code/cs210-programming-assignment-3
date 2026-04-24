@@ -130,6 +130,10 @@ bool dfs(int r, int c,
         {
             return false;
         }
+        if (maze[r][c] == 1) 
+        {
+            return false;
+        }
     }
 
 // ----------------------------------------------------------
