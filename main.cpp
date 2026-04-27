@@ -134,6 +134,10 @@ bool dfs(int r, int c,
         {
             return false;
         }
+        if (visited[r][c]) 
+        {
+            return false;
+        }
     }
 
 // ----------------------------------------------------------
