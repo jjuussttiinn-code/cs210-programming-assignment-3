@@ -139,6 +139,10 @@ bool dfs(int r, int c,
             return false;
         }
         visited[r][c] = true;
+        if (r == exit_r && c == exit_c) 
+        {
+            return true;
+        }
     }
 
 // ----------------------------------------------------------
