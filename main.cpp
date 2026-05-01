@@ -143,6 +143,13 @@ bool dfs(int r, int c,
         {
             return true;
         }
+
+        for (int i = 0; i < 4; i++)
+        {
+            int nr = r + dr[i];
+            int nc = c + dc[i];
+        }
+        return false;
     }
 
 // ----------------------------------------------------------
