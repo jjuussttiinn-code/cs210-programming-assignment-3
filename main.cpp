@@ -148,6 +148,12 @@ bool dfs(int r, int c,
         {
             int nr = r + dr[i];
             int nc = c + dc[i];
+            if (dfs(nr, nc, maze, visited, parent_r, parent_c, exit_r, exit_c))
+            {
+                parent_r[nr][nc] = r;
+                parent_c[nr][nc] = c;
+                return true;
+            }
         }
         return false;
     }
